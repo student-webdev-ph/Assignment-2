@@ -23,7 +23,7 @@ main{
     border-radius: 12px;
     padding: 10px 47px;
 }
-.navbar, .banner, .all-curriculum{
+.navbar, .banner, .all-curriculum, .stories{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -114,8 +114,20 @@ main{
     border: none;
     border-radius: 18.86px;
     box-shadow: 0px 6px 50px 0px rgba(117, 115, 115, 0.486);
-    width: 100%;
+    max-width: 100%;
 }
+
+/* CARD GRADIENT Style */
+#card-1{
+    background: linear-gradient(rgb(218, 238, 247),rgb(255, 255, 255))
+}
+#card-2{
+    background: linear-gradient(rgb(252, 244, 228),rgb(255, 255, 255))
+}
+#card-3{
+    background: linear-gradient(rgb(237, 225, 255),rgb(255, 255, 255));
+}
+
 .curriculum-title{
     font-size: 1.53rem;
     font-weight: 700;
@@ -154,21 +166,41 @@ main{
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 80px;
+    margin-bottom: 60px;
     padding: 17px 22.13px 19px 22.5px;
 }
 
+/* STORIES SECTION Styles */
+.second-section{
+    text-align: center;
+}
+.stories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+#story-img-1{
+    grid-row: span 2;
+}
+
+
+.stories-image{
+    /* border: 1px solid red; */
+}
 
 
 /* responsive for iphone 13 & 14 */
-@media screen and (max-width:576px){
-    .hide{
+@media screen and (max-width:570px){
+    .hide, .next{
         display: none;
     }
     .banner{
         flex-direction: column-reverse;
-        max-width: 357px;
+        max-width: 100%;
     }
     .banner{
+        align-items: center;
         margin: 20px;
         padding: 10px;
     }
@@ -176,11 +208,27 @@ main{
     .banner-content{
         text-align: center;
         margin: 20px 0;
-        max-width: 357px;
+        max-width: 100%;
     }
     .banner-picture{
         align-items: center;
         max-width: 337px;
        padding: 20px 10px;
+    }
+
+
+    main{
+        background-image: url(/assets/bg.png);
+    }
+    .section-title{
+        font-size: 26px;
+    }
+    .all-curriculum{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .card{
+        padding: 43px 30px;
+        margin: 5px 10px;
     }
 }
