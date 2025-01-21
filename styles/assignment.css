@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body{
+    font-family: "Quicksand"
+}
+
+/* shared style */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    font-size: 1.25rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 47px;
+}
+
+
+
+/* NAV Style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name{
+    font-weight: bold;
+    font-size:2rem;
+}
+
+.list-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+.nav-link {
+    text-decoration: none;
+}
+
+#span-1{
+    color: #FEA301;
+    font-weight: 700;
+}
+#span-2{
+    color: #01ACFD;
+}
+#span-3{
+    color: #05D4DF;
+}
+#span-4{
+    color: #5D58EF ;
+}
+.nav-btn{
+    font-size: 20px;
+    color:white ;
+    background-color: orange;
+    border: none;
+    border-radius:12px;
+    padding: 10px 50px;
+
+}
+.navbar, .banner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* BANNER Styles */
+.banner{
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 100%;
+    padding-top:122px ;
+    padding-bottom:122px ;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+#Empowering{
+ color: #FEA301;
+}
+#towards-vision{
+    color: #01ACFD;
+}
+
+.banner-description{
+}
+
+
+
+/* responsive for iphone 13 & 14 */
+@media screen and (max-width:576px){
+    .hide{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        max-width: 357px;
+    }
+    .banner{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .banner-content{
+        text-align: center;
+        margin: 20px 0;
+        max-width: 357px;
+    }
+    .banner-picture{
+        align-items: center;
+        max-width: 337px;
+       padding: 20px 10px;
+    }
+}
