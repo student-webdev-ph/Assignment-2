@@ -8,6 +8,9 @@ a {
     text-decoration: none;
     color: white;
 }
+main{
+    background-image: url(/assets/bg.png);
+}
 
 .display-flex{
     display: flex;
@@ -19,6 +22,10 @@ a {
     border: none;
     border-radius: 12px;
     padding: 10px 47px;
+}
+.navbar, .banner, .all-curriculum{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -63,10 +70,6 @@ a {
     padding: 10px 50px;
 
 }
-.navbar, .banner{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 
 /* BANNER Styles */
@@ -90,7 +93,68 @@ a {
     color: #01ACFD;
 }
 
-.banner-description{
+
+/* CURRICULUM styles */
+
+.first-section{
+    text-align: center;
+}
+.section-title{
+    font-size: 2.87rem;
+    font-weight: 700;
+}
+.all-curriculum{
+    justify-content: space-between;
+    gap: 30px;
+}
+.card{
+    text-align: center;
+    background-color: white;
+    padding: 53px 40px 53px 40px;
+    border: none;
+    border-radius: 18.86px;
+    box-shadow: 0px 6px 50px 0px rgba(117, 115, 115, 0.486);
+    width: 100%;
+}
+.curriculum-title{
+    font-size: 1.53rem;
+    font-weight: 700;
+}
+.curriculum-description{
+    font-size: 15px;
+    font-weight: normal;
+}
+#curriculum-btn1{
+    color: #64C8FF;
+    font-size: 0.94rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+#curriculum-btn2{
+    color: #F0AA00;
+    font-size: 0.94rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+#curriculum-btn3{
+    color: #8700FF;
+    font-size: 0.94rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+.next{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #FEA301;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 80px;
+    padding: 17px 22.13px 19px 22.5px;
 }
 
 
