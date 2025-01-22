@@ -224,7 +224,7 @@ main{
     background-color: #3CD8E8;
     border: none;
     border-radius: 47px;
-    font-size: 13.34px;
+    font-size: 0.83rem;
     padding: 14.38px 25px 15.34px 25px;
     position: relative;
     top: -30px;
@@ -235,25 +235,25 @@ main{
     background-color: #95B226;
     border: none;
     border-radius: 47px;
-    font-size: 13.34px;
+    font-size:0.83rem;
     padding: 10.38px 20px 10.34px 20px;
     position: relative;
     top: -20px;
-    right: 40px;
+    right: 30px;
 }
 .btn-violet{
     color: #ffffff;
     background-color: #5D58F0;
     border: none;
     border-radius: 47px;
-    font-size: 13.34px;
+    font-size: 0.83rem;
     padding: 10.38px 20px 10.34px 20px;
     position: relative;
     top: -20px;
-    right: 40px;
+    right: 30px;
 }
 /* responsive for iphone 13 & 14 */
-@media screen and (max-width:570px){
+@media screen and (max-width:576px){
     .hide, .next{
         display: none;
     }
@@ -300,17 +300,25 @@ main{
     }
     .stories{
         grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        margin: 0 0;
-        /* gap: 5px; */
-        column-gap: 3px;
+        /* align-items: center;
+        justify-content: center; */
+        gap: 5px;
+        justify-items: center;
     }
     .images{
-        width: 80%;
+        max-width: 173px;
+    }
+    #memory-box-2, #memory-box-3, #memory-box-4, #memory-box-5{
+        max-width: 173px;
+        margin-top: 10px;
+    }
+    .memory-title{
+        max-width: 165px;
+        padding-left: 5px;
     }
     .btn-biue, .btn-parrot, .btn-violet{
-        padding: 10px 20px;
+        font-size: 0.6rem;
+        max-width: 103px;
+        padding: 5px 5px;
     }
 }
