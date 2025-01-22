@@ -307,6 +307,13 @@ main{
     font-weight: bold;
 }
 
+.marquee{
+    color:firebrick;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+}
+
 
 
 
