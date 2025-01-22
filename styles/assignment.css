@@ -31,6 +31,8 @@ main{
 
 
 /* NAV Style */
+
+
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -309,6 +311,13 @@ main{
 
 
 
+@media screen and (min-width:577px){
+    #menu{
+        display: none;
+    }
+}
+
+
 
 
 
@@ -318,8 +327,12 @@ main{
         display: none;
     }
 
+
     main{
         background-image: url("/assets/bg.png"),linear-gradient(rgb(255, 255, 255),rgb(255, 254, 252), rgb(255, 242, 223));
+    }
+    #line{
+        border-bottom: 1px solid orange;
     }
     .banner{
         flex-direction: column-reverse;
