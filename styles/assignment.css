@@ -9,7 +9,7 @@ a {
     color: white;
 }
 main{
-    background-image: url('/assets/bg.png'), linear-gradient(rgb(255, 255, 255),rgb(255, 254, 252), rgb(255, 242, 223));
+    background-image: url('../assets/bg.png');
 }
 
 .display-flex{
@@ -175,6 +175,7 @@ main{
 /* STORIES SECTION Styles */
 .second-section{
     text-align: center;
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 254, 252), rgb(255, 242, 223));
 }
 .stories{
     display: grid;
@@ -335,9 +336,6 @@ main{
     }
 
 
-    /* main{
-        background-image: url('/assets/bg.png'), linear-gradient(rgb(255, 255, 255),rgb(255, 254, 252), rgb(255, 242, 223));
-    } */
     #line{
         border-bottom: 1px solid orange;
     }
